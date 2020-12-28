@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DTS=arch/arm64/boot/dts
+DTS=arch/arm64/boot/dts/
 DTBTOOL=tools/dtbtool
 export ARCH=arm64
 export CROSS_COMPILE=/home/neel/Desktop/toolchain/linaro/bin/aarch64-linux-gnu-
