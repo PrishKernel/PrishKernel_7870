@@ -19,8 +19,9 @@ make exynos7870-j7velte_sea_open_00.dtb exynos7870-j7velte_sea_open_01.dtb exyno
 echo "============="
 echo "Building Zimg"
 echo "============="
-make O=out j7velte_defconfig -j$(($(nproc)+1))
-make O=out -C ${PWD} -j$(($(nproc)+1))
+#make j6lte_defconfig
+make j7velte_defconfig
+make -j$(($(nproc)+1))
 echo -e "Done\n"
 cp -r ./arch/arm64/boot/Image ./boot.img-zImage
 
