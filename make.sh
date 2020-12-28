@@ -23,3 +23,4 @@ make O=out j7velte_defconfig -j$(($(nproc)+1))
 make O=out -C ${PWD} -j$(($(nproc)+1))
 echo -e "Done\n"
 cp -r ./arch/arm64/boot/Image ./boot.img-zImage
+
